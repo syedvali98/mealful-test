@@ -1,4 +1,4 @@
-import { Col, Card, Button, Row, Typography } from "antd";
+import { Col, Card, Button, Row } from "antd";
 import React from "react";
 
 export default function MealCard({ meal, setIsModalVisible, setSelectedMeal }) {

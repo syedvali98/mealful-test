@@ -29,7 +29,7 @@ export default function Home() {
     if (mealsLoaded && mealTime !== "Test") {
       getMealsFromAPI(mealsLoaded);
     }
-  }, [mealTime]);
+  }, [mealTime, mealsLoaded]);
 
   return (
     <Row justify="center">

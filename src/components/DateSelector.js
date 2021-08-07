@@ -41,6 +41,7 @@ export default function DateSelector({ getMealsFromAPI }) {
       if (e.date === dayjs().add(24, "h").format("DD")) {
         setActive(e.date);
       }
+      return null;
     });
   }, []);
 
