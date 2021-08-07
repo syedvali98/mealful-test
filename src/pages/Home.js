@@ -32,10 +32,10 @@ export default function Home() {
   };
 
   useEffect(() => {
-    if (mealsLoaded && mealTime !== "Test") {
-      getMealsFromAPI(mealsLoaded);
+    if (mealTime !== "Test") {
+      getMealsFromAPI();
     }
-  }, [mealTime, mealsLoaded]);
+  }, [mealTime]);
 
   return (
     <Row justify="center">
