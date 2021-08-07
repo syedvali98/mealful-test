@@ -19,10 +19,16 @@ export default function Home() {
 
   const getMealsFromAPI = (customProp) => {
     setMealsLoaded(false);
-    getMeals(customProp).then((a) => {
-      setMealOptions(a.data);
-      setMealsLoaded(true);
-    });
+    getMeals(customProp)
+      .then((a) => {
+        setMealOptions(a.data);
+        setMealsLoaded(true);
+      })
+      .catch((e) => {
+        console.log(e);
+        setMealsLoaded(true);
+        setMealOptions([]);
+      });
   };
 
   useEffect(() => {
