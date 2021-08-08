@@ -45,10 +45,10 @@ export default function Home() {
       <Col span={24}>
         <DateSelector getMealsFromAPI={getMealsFromAPI} />
       </Col>
-      <Col span={17} style={{ padding: "15px 0" }}>
+      <Col lg={17} md={20} sm={24} style={{ padding: "15px 0" }}>
         <Row justify="space-between">
           <Col>
-            <h1 style={{ fontWeight: 500, fontSize: "2.2em" }}>
+            <h1 style={{ fontWeight: 500, fontSize: "1.8em" }}>
               {mealTime} Menu
             </h1>
           </Col>

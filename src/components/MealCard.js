@@ -3,7 +3,7 @@ import React from "react";
 
 export default function MealCard({ meal, setIsModalVisible, setSelectedMeal }) {
   return (
-    <Col span={8}>
+    <Col lg={8} md={12} sm={24}>
       <Card
         hoverable
         style={{ width: "100%", borderRadius: "12px" }}

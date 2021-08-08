@@ -60,3 +60,41 @@
     font-size: 1.2em;
     font-weight: 200;
   }
+
+  .date-button{
+      padding: 0.5em 4.5em 5.5em 4.5em;
+  }
+
+  @media only screen and (max-width: 600px) {
+      .date-button{
+          padding: 0.5em 0 4.5em 0;
+      }
+  }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .date-button{
+        padding: 0.5em 4.5em 4.5em 4.5em ;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .date-button{
+        padding: 0.5em 3.5em 5.5em 3.5em;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .date-button{
+        padding: 0.5em 4.5em 5.5em 4.5em;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .date-button{
+        padding: 0.5em 4.5em 5.5em 4.5em;
+    }
+}

@@ -48,8 +48,10 @@ export default function DateSelector({ getMealsFromAPI }) {
   return (
     <Row justify="center">
       <Col
-        span={17}
-        style={{ borderBottom: "1px solid gray", padding: "15px 0 " }}
+        sm={24}
+        md={20}
+        lg={17}
+        style={{ borderBottom: "1px solid gray", padding: "15px 0" }}
       >
         <Row justify="space-between">
           {getDates().map((elem) => (
@@ -57,20 +59,22 @@ export default function DateSelector({ getMealsFromAPI }) {
               <Button
                 style={{
                   border: "none",
-                  padding: "0.5em 4.5em 5.5em 4.5em",
+                  //   padding: "0.5em 4.5em 5.5em 4.5em",
                   borderRadius: "10px",
                   background: getBackgroundColor(elem.date),
                 }}
+                className="date-button"
                 onMouseOver={() => setHovering(elem.date)}
                 onMouseOut={() => setHovering(null)}
                 onClick={() => {
                   setActive(elem.date);
                   getMealsFromAPI(elem.date);
                 }}
+                block
               >
                 <h3
                   style={{
-                    fontSize: "1.1rem",
+                    fontSize: "1.1em",
                     fontWeight: elem.date === active ? "500" : "300",
                     color: getTextColor(elem.date),
                   }}
@@ -80,7 +84,7 @@ export default function DateSelector({ getMealsFromAPI }) {
                 <br />
                 <h4
                   style={{
-                    fontSize: "2rem",
+                    fontSize: "2em",
                     marginTop: "-2rem",
                     color: getTextColor(elem.date),
                   }}
