@@ -48,6 +48,7 @@ export default function DateSelector({ getMealsFromAPI }) {
   return (
     <Row justify="center">
       <Col
+        xs={24}
         sm={24}
         md={20}
         lg={17}
